@@ -7,12 +7,11 @@ gem 'factory_girl'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
-gem 'rails_12factor', group: :production
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-# Using postgres instead
+# Using postgres for Heroku
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -39,6 +38,11 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+  gem 'pg', '0.15.1'
 end
 
 # Use ActiveModel has_secure_password
