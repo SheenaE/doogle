@@ -1,5 +1,5 @@
 class Word < ActiveRecord::Base
-  has_many :definitions
+  has_many :definitions, dependent: :destroy
   before_save { self.name = name.downcase }
 
   validates :name, presence: true,

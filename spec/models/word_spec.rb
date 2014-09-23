@@ -25,4 +25,21 @@ describe Word do
     
     it { should_not be_valid }
   end
+
+  describe "definition associations" do
+    before do
+      @word.save
+      @word.definitions.create(content: "fish")
+      @word.definitions.create(content: "sushi")
+    end
+    
+    it "should destroy associated definitions" do
+      definitions = @word.definitions.to_a
+      @word.destroy
+      expect(definitions).not_to be_empty
+      definitions.each do |definition|
+        expect(Definition.where(id: definition.id)).to be_empty
+      end
+    end
+  end
 end
