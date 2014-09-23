@@ -9,7 +9,7 @@ gem 'factory_girl'
 gem 'rails', '4.0.8'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 
 # Using postgres for Heroku
 gem 'pg', '0.15.1'
