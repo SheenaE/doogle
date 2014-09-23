@@ -12,7 +12,7 @@ gem 'rails', '4.0.8'
 gem 'sqlite3'
 
 # Using postgres for Heroku
-gem 'pg'
+gem 'pg', '0.15.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -42,7 +42,6 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
-  gem 'pg', '0.15.1'
 end
 
 # Use ActiveModel has_secure_password
