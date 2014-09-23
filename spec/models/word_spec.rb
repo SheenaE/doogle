@@ -7,6 +7,7 @@ describe Word do
   subject { @word }
 
   it { should respond_to(:name) }
+  it { should respond_to(:definitions) }
 
   it { should be_valid }
 
