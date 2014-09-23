@@ -40,6 +40,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec-its'
 end
 
 group :test do
