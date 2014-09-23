@@ -7,6 +7,9 @@ gem 'factory_girl'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
+gem 'pry-rails'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
