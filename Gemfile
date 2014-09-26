@@ -3,7 +3,7 @@ ruby '2.1.0'
 
 gem 'heroku_san'
 gem 'nokogiri'
-gem 'factory_girl'
+gem 'factory_girl_rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'

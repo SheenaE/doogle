@@ -49,6 +49,9 @@ GEM
     execjs (2.2.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     heroku-api (0.3.19)
       excon (~> 0.38)
       multi_json (~> 1.8)
@@ -167,7 +170,7 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
   capybara (= 2.2.0)
   coffee-rails (~> 4.0.0)
-  factory_girl
+  factory_girl_rails
   heroku_san
   jbuilder (~> 1.2)
   jquery-rails
