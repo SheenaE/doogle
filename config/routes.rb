@@ -1,4 +1,5 @@
 Doogle::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resource :words
 
   root 'words#show'
