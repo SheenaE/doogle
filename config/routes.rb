@@ -1,10 +1,13 @@
 Doogle::Application.routes.draw do
-  get "landing_page/home"
+  resource :words
+
+  root 'words#show'
+  #get 'words/index'
+  #get 'words/' => 'words#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'landing_page#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
