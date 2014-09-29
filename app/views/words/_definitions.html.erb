@@ -1,0 +1,11 @@
+<% if @definitions %>
+  <ul>
+    <% for definition in @definitions do %>
+      <li>
+        <%= definition.content.html_safe %>
+      </li>
+    <% end %>
+  </ul>
+<% elsif params[:search] %>
+  That word is not in the database!
+<% end %>

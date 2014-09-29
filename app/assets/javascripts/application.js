@@ -1,4 +1,5 @@
 // This is a manifest file that'll be compiled into application.js, which will include all the files
+
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
@@ -14,3 +15,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+  $("#word_search").submit(function() {
+    $.get(this.action, $(this).serialize(), null, "script");
+    return false;
+  });
+});
