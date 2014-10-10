@@ -14,3 +14,6 @@ doc/
 .DS_Store
 .idea
 .secret
+
+#Ignore API Key(s)
+/config/initializers/dictionary_api_key.rb

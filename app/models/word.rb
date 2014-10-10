@@ -11,7 +11,7 @@ class Word < ActiveRecord::Base
     if search
       result = Word.find_by_name(search.downcase)
       if !result
-		file_handle = open("http://www.dictionaryapi.com/api/v1/references/collegiate/xml/#{search}?key=3b6e2aab-06d9-436f-a23b-50a43f9a3827")
+		file_handle = open("http://www.dictionaryapi.com/api/v1/references/collegiate/xml/#{search}?key=" + Rails.configuration.dictionary_api_key)
       	entry = Nokogiri::XML(file_handle)
       	definitions = entry.xpath("//dt")
       	if definitions.empty?
